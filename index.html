@@ -20,10 +20,149 @@
         <script src="./assets/script/app.js" defer></script>
     </head>
     <body>
+        <header>
+            <nav id="desktop-nav">
+                <div class="logo">Wellington Suero</div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav id="hamburger-nav">
+                <div class="logo">Wellington Suero</div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <main>
-            
+            <section id="profile">
+                <div class="section__pic-container">
+                    <img src="./assets/img/profile-pic.png" alt="Wellington Suero profile picture">
+                </div>
+                <div class="section__text">
+                    <p class="section__text__p1">Hello, I'm</p>
+                    <h1 class="title">Wellington Suero</h1>
+                    <p class="section__text__p2">Frontend Developer</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="location.href='./#about'">
+                            About Me
+                        </button>
+                        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                            Contact Info
+                        </button>
+                    </div>
+                    <div id="socials-container">
+                        <img 
+                            src="./assets/img/linkedin.png" 
+                            alt="My LinkedIn profile"
+                            class="icon" 
+                            onclick="location.href='https://www.linkedin.com/in/wellington-suero-2997a521b/'"
+                        />
+                        <img 
+                            src="./assets/img/github.png" 
+                            alt="My Github profile"
+                            class="icon" 
+                            onclick="location.href='https://github.com/Wellfc'"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <p class="section__text__p1">Get To Know More</p>
+                <h1 class="title">About Me</h1>
+                <div class="section-container">
+                    <div class="section__pic-container">
+                        <img 
+                            src="./assets/img/about-pic.png" 
+                            alt="Profile picture"
+                            class="about-pic"
+                        >
+                    </div>
+                    <div class="about-details-container">
+                        <div class="about-containers">
+                            <div class="details-container color-container">
+                                <img 
+                                    src="./assets/img/experience.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                >
+                                <h3>Experience</h3>
+                                <p>1 year <br>Frontend Development</p>
+                            </div>
+                            <div class="details-container color-container">
+                                <img 
+                                    src="./assets/img/education.png" 
+                                    alt="Experience icon" 
+                                    class="icon"
+                                >
+                                <h3>Education</h3>
+                                <p>B.D. in Systems Engineering <br>Software Development Diploma</p>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>
+                                I'm Wellington Suero, a passionate software developer 
+                                based in Winnipeg, Canada, with a knack for crafting 
+                                elegant code and building innovative solutions. I believe 
+                                in the power of technology to transform our world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img 
+                    src="./assets/img/arrow.png" 
+                    alt="Arrow icon" 
+                    class="icon arrow" 
+                    onclick="location.href='./#experience'"
+                />
+            </section>
+            <section id="contact">
+                <p class="section__text__p1">Get in Touch</p>
+                <h1 class="title">Contact Me</h1>
+                <div class="contact-info-upper-container">
+                    <div class="contact-info-container">
+                        <img 
+                            src="./assets/img/email.png" 
+                            alt="Email icon"
+                            class="icon contact-icon email-icon"
+                        />
+                        <p><a href="mailto:well.suero@gmail.com">well.suero@gmail.com</a></p>
+                    </div>
+                    <div class="contact-info-container">
+                        <img 
+                            src="./assets/img/linkedin.png" 
+                            alt="LinkedIn icon"
+                            class="icon contact-icon"
+                        />
+                        <p><a href="https://www.linkedin.com/in/wellington-suero-2997a521b/">LinkedIn</a></p>
+                    </div>
+                </div>
+            </section>
         </main>
-
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2023 Wellington Suero. All Rights Reserved.</p>
+        </footer>
         <noscript>
             <p>This page requires a JavaScript-enabled browser</p>
         </noscript>

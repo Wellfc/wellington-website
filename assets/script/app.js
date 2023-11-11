@@ -10,3 +10,11 @@ function select(selector, parent = document) {
 }
 
 /* Variables */
+const menu = select('.menu-links');
+const icon = select('.hamburger-icon');
+
+
+function toggleMenu() {
+    menu.classList.toggle('open');
+    icon.classList.toggle('open');
+}
