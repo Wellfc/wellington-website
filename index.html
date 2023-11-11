@@ -20,7 +20,7 @@
         <script src="./assets/script/app.js" defer></script>
     </head>
     <body>
-        <header>
+        <header id="top">
             <nav id="desktop-nav">
                 <div class="logo">Wellington Suero</div>
                 <div>
@@ -55,10 +55,10 @@
                     <h1 class="title">Wellington Suero</h1>
                     <p class="section__text__p2">Frontend Developer</p>
                     <div class="btn-container">
-                        <button class="btn btn-color-2" onclick="location.href='./#about'">
+                        <button class="btn btn-color-2" onclick="location.href='#about'">
                             About Me
                         </button>
-                        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        <button class="btn btn-color-1" onclick="location.href='#contact'">
                             Contact Info
                         </button>
                     </div>
@@ -124,7 +124,7 @@
                     src="./assets/img/arrow.png" 
                     alt="Arrow icon" 
                     class="icon arrow" 
-                    onclick="location.href='./#experience'"
+                    onclick="location.href='#contact'"
                 />
             </section>
             <section id="contact">
@@ -154,9 +154,8 @@
             <nav>
                 <div class="nav-links-container">
                     <ul class="nav-links">
+                        <li><a href="#top">Profile</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
