@@ -360,6 +360,17 @@ section {
     height: 2.5rem;
 }
 
+/* FOOTER SECTION */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
 
 @media screen and (max-width: 1000px) {
     #desktop-nav {
